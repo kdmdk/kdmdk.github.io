@@ -11,8 +11,116 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+      header {
+        height: 80px;
+        width: 1500px;
+        font-family: PixelMplus10;
+        background-color: #000;
+        font-size: 60px;
+        color: #AAA;
+        text-align: center;
+        font-weight: bold;
+      }
+      body {
+        width: 450px;
+        background-image: url("F001.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: repeat;
+        font-family: PixelMplus12;
+        font-size: 18px;
+        color: #FFF;
+      }
+      section {
+        margin: 10px;
+        font-family: PixelMplus12
+      }
+
+      table.type12 {
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        opacity:0.8;
+        border-collapse: separate;
+      }
+      table.type12 th{
+        padding: 10px;
+        background: #444;
+      }
+      table.type12 td {
+        padding: 10px;
+        color: #FFF;
+        background: #666;
+      }
+      #logo {
+        padding: 10px;
+        color: #222;
+        font-size: 18px;
+        font-family: PixelMplus12;
+      }
+      #logo img {
+        max-width: 100px;
+        border: 5px solid #AAA;
+        border-radius: 15%;
+      }
+      footer {
+        padding-top: 30px;
+        font-family: MEIRYO;
+        position: fixed;
+        text-align: center;
+        bottom: 0;
+        width: 1500px;
+        height: 80px;
+        font-size: 90%;
+        background-color: #CCC;
+        color: #444;
+        margin: 0 auto;
+        /*background-position: center;*/
+        /*display: table-cell;*/
+        /*vertical-align:middle;*/
+        /*text-align:center;*/
+      }
+    </style>
   </head>
+  <header>K O D A M A 'S　F A C T O R Y</header>
   <body>
-    <h1>Hello, world!</h1>
+        <div id="logo">
+          <img src="kdm002.jpg" alt="">
+          <p>児玉 年健のポートフォリオへようこそ!<br>
+          現在、webアプリケーションを学習中...</p>
+        </div>
+      <button type="button" onclick="window.open('https://github.com/kdmdk')" 
+      style="background-color:#cdf;">➡️githubユーザーページ</button>
+      <table class="type12">
+      <section>
+          <tr>
+            <th>職業</th>
+            <td>事務系</td>
+          </tr>
+          <tr>
+            <th>年齢</th>
+            <td>32歳</td>
+          </tr>
+          <tr>
+            <th>出身</th>
+            <td>長野県</td>
+          </tr>
+          <tr>
+            <th>性格</th>
+            <td>真面目、マイペース</td>
+          </tr>
+          <tr>
+            <th>趣味</th>
+            <td>読書、音楽鑑賞、ゲーム</td>
+          </tr>
+        </table>
+      </section>
+      <section02>
+        
+      </section02>
+    <footer>
+      <div></div>
+      <p>&copy; 2017 Toshitake Kodama.</p>
+    </footer>
   </body>
 </html>
