@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,15 +15,17 @@
   <style>
     header {
       height: 80px;
-      font-family: PixelMplus12;
+      /*width: 1440px;*/
+      font-family: PixelMplus10;
       background-color: #000;
       font-size: 60px;
       color: #AAA;
       text-align: center;
       font-weight: bold;
-      letter-spacing: 20px;
     }
+
     body {
+      /*width: 350px;*/
       background-image: url("F001.jpg");
       background-position: center center;
       background-size: cover;
@@ -32,10 +34,11 @@
       font-size: 18px;
       color: #FFF;
     }
+
     .side-profile {
       filter: alpha(opacity=80);
       -moz-opacity: 0.8;
-      opacity:0.8;
+      opacity: 0.8;
       background-color: #777;
       border: 5px solid #999;
       margin: 10px;
@@ -48,69 +51,86 @@
       border-collapse: separate;
       border-spacing: 1px;
     }
-    table.type12 th{
+
+    table.type12 th {
       padding: 10px;
       background: #444;
     }
+
     table.type12 td {
       padding: 10px;
       color: #FFF;
       background: #666;
     }
+
     #logo {
-      text-align:center;
+      text-align: center;
       padding: 10px;
       color: #fff;
       font-size: 18px;
       font-family: PixelMplus12;
     }
+
     #logo img {
       max-width: 100px;
       border: 5px solid #AAA;
       border-radius: 10%;
     }
+
     footer {
-      /*display:table-cell;*/
+      padding-top: 30px;
       font-family: MEIRYO;
       position: fixed;
       text-align: center;
-      /*vertical-align: center;*/
       bottom: 0;
-      height: 30px;
-      font-size: 15px;
+      /*width: 1440px;*/
+      width: 100%;
+      height: 80px;
+      font-size: 90%;
       background-color: #CCC;
       color: #444;
-      width: 100%
+      margin: 0 auto;
     }
-    .right{
-      font-family: MEIRYO;
-      font-size: 8px;
-      margin: 10px;
-      padding: 10px;
-      height: 400px;
-      width: 1000px;
-      /*border: 5px solid #999;*/
-      background-color: rgba(0,0,0,0.4);
-      color: #AAA;
+
+    .box {
+      float: left;
     }
-    
-    
+
+    .boxContainer {
+      overflow: hidden;
+    }
+    /*clearfix*/
+
+    .boxContainer:before,
+    .boxContainer:after {
+      content: "";
+      display: table;
+    }
+
+    .boxContainer:after {
+      clear: both;
+    }
+    /*For IE 6/7 (trigger hasLayout)*/
+
+    .boxContainer {
+      zoom: 1;
+    }
   </style>
 </head>
-  
-<body> 
-  <header>KODAMA'S　FACTORY</header>
+
+<body>
+  <header>K O D A M A 'S　F A C T O R Y</header>
   <div class="row">
     <div class="col-md-3">
       <div class="side-profile">
         <div id="logo">
-          <img src="kdm004.jpg" alt="">
+          <img src="kdm003.jpg" alt="">
           <p>児玉 年健<br>
-          <font color=#999 size=5px face="メイリオ"><b>現在学習中...</b></font>
+            <font color=#999 size=5px face="メイリオ"><b>現在学習中...</b></font>
           </p>
-        <button type="button" onclick="window.open('https://github.com/kdmdk')" style="background-color:#66B;">➡️githubユーザーページ</button>
-      </div>
-      <table class="type12">
+          <button type="button" onclick="window.open('https://github.com/kdmdk')" style="background-color:#66B;">➡️githubユーザーページ</button>
+        </div>
+        <table class="type12">
           <tr>
             <th>職業</th>
             <td>事務系</td>
@@ -135,31 +155,12 @@
       </div>
     </div>
     <div class="col-md-9">
-      <div class="right">
-        <div class="col-md-12">
-        <font size=12px color=#FFF face=PixelMplus12>WORK LIST</font>
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="D001.png" alt="" width="150" height="150"></a>
-          000000000000000
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="D001.png" alt="" width="150" height="150"></a>
-          aaaaaaaaaaaaaaaaa
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="D001.png" alt="" width="150" height="150"></a>
-          bbbbbbbbbbbbbbbb
-        </div>
-        <div class="col-md-3">
-          <a href=""><img src="D001.png" alt="" width="150" height="150"></a>
-          ccccccccccccccccc
-        </div>
-      </div>
+      右側のコンテンツ
     </div>
+  </div>
   <footer>
     <p>&copy; 2017 Toshitake Kodama.</p>
   </footer>
 </body>
-  
+
 </html>
