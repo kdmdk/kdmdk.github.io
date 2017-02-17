@@ -22,17 +22,17 @@
       text-align: center;
       font-weight: bold;
       letter-spacing: 20px;
-      width: 100%;
-      margin: 0px;
+      /*width: 100%;*/
+      /*margin: 0px;*/
     }
-    header p {
-      width: 100%;
-    }
+    /*header p {*/
+    /*  width: 100%;*/
+    /*}*/
     body {
       background-image: url("F001.jpg");
       background-position: center center;
       background-size: cover;
-      background-repeat: repeat;
+      background-repeat: no-repeat;
       font-family: PixelMplus12;
       font-size: 18px;
       color: #FFF;
@@ -43,21 +43,21 @@
       opacity:0.8;
       background-color: #777;
       border: 5px solid #999;
-      margin: 10px;
+      /*margin: 10px;*/
       font-family: PixelMplus12
     }
 
-    table.type12 {
+    .type12 {
       margin: 10px;
       text-align: left;
       border-collapse: separate;
       border-spacing: 1px;
     }
-    table.type12 th{
+    .type12 th{
       padding: 10px;
       background: #444;
     }
-    table.type12 td {
+    .type12 td {
       padding: 10px;
       color: #FFF;
       background: #666;
@@ -83,6 +83,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
+      /*margin: 0 0 0px 0px;*/
       height: 30px;
       font-size: 15px;
       background-color: #CCC;
@@ -91,8 +92,8 @@
     .right{
       font-family: MEIRYO;
       font-size: 8px;
-      margin: 10px;
-      padding: 10px;
+      /*margin: 10px;*/
+      /*padding: 10px;*/
       /*border: 5px solid #999;*/
       background-color: rgba(0,0,0,0.4);
       color: #AAA;
@@ -106,22 +107,28 @@
       color:#FFF;
       font-size:24px;
       font-family: "PixelMplus12";
+      letter-spacing: 10px;
     }
-    img.gazou {
-      width:100%;
+    .gazou {
+      width: 100%;
     }
-    
+    .row {
+      margin: 0px;
+    }
+    .container{
+     width: 100%; 
+    }
   </style>
 </head>
   
 <body>
-  <!--<div class='container'>-->
+  <div class='container'>
   <div class='row'>
     <div class='col-xs-12'>
       <header><p>KODAMA'S　FACTORY</p></header>
     </div>
   </div>
-  <!--</div>-->
+  </div>
   <div class="row">
     <div class="col-md-3">
       <div class="side-profile">
@@ -163,19 +170,23 @@
         </div>
         <div class="col-md-3 col-sm-6">
           <a href=""><img src="D001.png" alt="" class="gazou"></a>
-          000000000000000
+          000000000000000<br>
+          222222222222222
         </div>
         <div class="col-md-3 col-sm-6">
           <a href=""><img src="D001.png" alt="" class="gazou"></a>
-          aaaaaaaaaaaaaaaaa
+          aaaaaaaaaaaaaaaaa<br>
+          bbbbbbbbbbbbbbbbb
         </div>
         <div class="col-md-3 col-sm-6">
           <a href=""><img src="D001.png" alt="" class="gazou"></a>
-          bbbbbbbbbbbbbbbb
+          bbbbbbbbbbbbbbbb<br>
+          cccccccccccccccc
         </div>
         <div class="col-md-3 col-sm-6">
           <a href=""><img src="D001.png" alt="" class="gazou"></a>
-          ccccccccccccccccc
+          ccccccccccccccccc<br>
+          ddddddddddddddddd
         </div>
       </div>
     </div>
