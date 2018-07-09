@@ -1,198 +1,109 @@
 <!DOCTYPE html>
 <html lang="ja">
-  
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap Sample</title>
-  <!-- BootstrapのCSS読み込み -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <!-- jQuery読み込み -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- BootstrapのJS読み込み -->
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <style>
-    header {
-      /*height: 80px;*/
-      font-family: PixelMplus12;
-      background-color: #000;
-      font-size: 35px;
-      color: #AAA;
-      text-align: center;
-      font-weight: bold;
-      letter-spacing: 20px;
-      /*width: 100%;*/
-      /*margin: 0px;*/
-    }
-    /*header p {*/
-    /*  width: 100%;*/
-    /*}*/
-    body {
-      background-image: url("F001.jpg");
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      font-family: PixelMplus12;
-      font-size: 18px;
-      color: #FFF;
-    }
-    .side-profile {
-      filter: alpha(opacity=80);
-      -moz-opacity: 0.8;
-      opacity:0.8;
-      background-color: #777;
-      border: 5px solid #999;
-      /*margin: 10px;*/
-      font-family: PixelMplus12
-    }
 
-    .type12 {
-      margin: 10px;
-      text-align: left;
-      border-collapse: separate;
-      border-spacing: 1px;
-    }
-    .type12 th{
-      padding: 10px;
-      background: #444;
-    }
-    .type12 td {
-      padding: 10px;
-      color: #FFF;
-      background: #666;
-    }
-    #logo {
-      text-align:center;
-      padding: 10px;
-      color: #fff;
-      font-size: 18px;
-      font-family: PixelMplus12;
-    }
-    #logo img {
-      max-width: 100px;
-      border: 5px solid #AAA;
-      border-radius: 10%;
-    }
-    footer {
-      /*display:table-cell;*/
-      font-family: MEIRYO;
-      position: fixed;
-      text-align: center;
-      /*vertical-align: center;*/
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      /*margin: 0 0 0px 0px;*/
-      height: 30px;
-      font-size: 15px;
-      background-color: #CCC;
-      color: #000;
-    }
-    .right{
-      font-family: MEIRYO;
-      font-size: 8px;
-      /*margin: 10px;*/
-      /*padding: 10px;*/
-      /*border: 5px solid #999;*/
-      background-color: rgba(0,0,0,0.4);
-      color: #AAA;
-    }
-    .hoge {
-      color:#999;
-      font-size:24px;
-      font-family: "メイリオ";
-    }
-    .hogehoge {
-      color:#FFF;
-      font-size:24px;
-      font-family: "PixelMplus12";
-      letter-spacing: 10px;
-    }
-    .gazou {
-      width: 100%;
-    }
-    .row {
-      margin: 0px;
-    }
-    .container{
-     width: 100%; 
-    }
-  </style>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kodama Toshitake</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/vegas.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Russo One',"Sawarabi Mincho", sans-serif;
+			
+		}
+
+		body {
+			background-color: #aaa;
+			background-image: url("F001.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		header {
+			background-color: rgba(100, 100, 100, 0.4);
+			height: 70px;
+			font-size: 24px;
+			color:#abc;
+			font-family: 'Russo One', sans-serif;
+		}
+
+		footer {
+			background-color: rgba(100, 100, 100, 0.8);
+			text-align: center;
+			color: #FFF;
+		}
+
+		#box {
+			height: 1000px;
+			background-color: rgba(100, 100, 100, 0.3);
+		}
+		li{
+			display: inline-block;
+		}
+	</style>
 </head>
-  
+
 <body>
-  <div class='container'>
-  <div class='row'>
-    <div class='col-xs-12'>
-      <header><p>KODAMA'S　FACTORY</p></header>
-    </div>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3">
-      <div class="side-profile">
-        <div id="logo">
-          <img src="kdm004.jpg" alt="">
-          <p>児玉 年健<br>
-          <span class="hoge"><b>現在学習中...</b></span>
-          </p>
-        <button type="button" onclick="window.open('https://github.com/kdmdk')" style="background-color:#66B;">➡️githubユーザーページ</button>
-      </div>
-      <table class="type12">
-          <tr>
-            <th>職業</th>
-            <td>事務系</td>
-          </tr>
-          <tr>
-            <th>年齢</th>
-            <td>32歳</td>
-          </tr>
-          <tr>
-            <th>出身</th>
-            <td>長野県</td>
-          </tr>
-          <tr>
-            <th>性格</th>
-            <td>真面目、マイペース</td>
-          </tr>
-          <tr>
-            <th>趣味</th>
-            <td>読書、音楽鑑賞、ゲーム</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div class="col-md-9">
-      <div class="row right">
-        <div class="col-xs-12">
-          <div class="hogehoge"><b>WORK LIST</b></div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href=""><img src="D001.png" alt="" class="gazou"></a>
-          000000000000000<br>
-          222222222222222
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href=""><img src="D001.png" alt="" class="gazou"></a>
-          aaaaaaaaaaaaaaaaa<br>
-          bbbbbbbbbbbbbbbbb
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href=""><img src="D001.png" alt="" class="gazou"></a>
-          bbbbbbbbbbbbbbbb<br>
-          cccccccccccccccc
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href=""><img src="D001.png" alt="" class="gazou"></a>
-          ccccccccccccccccc<br>
-          ddddddddddddddddd
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <p>&copy; 2017 Toshitake Kodama.</p>
-  </footer>
+	<header>
+		<h1>Kodama Toshitake</h1>
+	</header>
+	<div id="navbar">
+		<ul>
+			<li>ABOUT</li>
+			<li>WORKS</li>
+			<li>CONTACT</li>
+		</ul>
+	
+	
+	</div>
+	<div id="box">
+		<p>ABOUT</p>
+		<img src="kdmimg.jpg" height="50px" alt="">
+		<p>児玉年健
+			<br>
+			<br>主な習得スキル
+			<br>HTML, CSS, Javascript, jQuery, Unity, Excel, Access, Ruby, RubyOnRails, Photoshop, Illustrator
+			<br>元々ゲームを作る為その周辺の技術を独習し仕事に応用できる技術も習得。
+			<br>事務の仕事を退職後、webデザインの職業訓練とunityのプログラミングブートキャンプを続けて受講。
+			<br>現在求職中……
+		</p>
+	</div>
+
+	<footer>
+		<p>&copy; 2018 Toshitake Kodama.</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/vegas.min.js"></script>
+	<script>
+		$(function() {
+			$('body').vegas({
+				slides: [{
+						src: 'F001.jpg'
+					},
+					{
+						src: 'F002.jpg'
+					},
+					{
+						src: 'F003.jpg'
+					}
+				],
+				delay: 30000,
+				timer: false,
+				overlay: 'overlays/07.png',
+				animation: 'kenburnsLeft'
+			});
+		});
+
+	</script>
+
 </body>
+
 </html>
