@@ -8,7 +8,7 @@
 	<title>Kodama Toshitake</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
-	<link rel="shortcut icon" type="image/x-icon" href="https://github.com/kdmdk/kdmdk.github.io/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="https://github.com/kdmdk/kdmdk.github.io/myimg/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/vegas.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet">
@@ -92,6 +92,7 @@
 			font-family: 'Audiowide', "Sawarabi Mincho", sans-serif;
 			margin-top: -190px;
 			padding-top: 190px;
+			padding-left: 12px;
 		}
 
 		.box {
@@ -106,8 +107,7 @@
 			font-family: "Sawarabi Mincho", sans-serif;
 			font-size: 20px;
 			font-weight: 700;
-			color: #000;
-			//font-style: italic;
+			color: #000; //font-style: italic;
 			margin-top: 10px;
 		}
 
@@ -119,22 +119,36 @@
 		#navbar ul li {
 			margin-left: 10px;
 		}
-		a{
+
+		a {
 			text-decoration: none;
 		}
-		a:link{
+
+		a:link {
 			color: #111;
 		}
-		a:visited{
+
+		a:visited {
 			color: #333;
 		}
+
+		header a:link,
+		header a:visited,
+		p a:link
+		{
+			color: #fff;
+		}
+		p a:visited{
+			color:#bbb;
+		}
+
 	</style>
 </head>
 
 <body>
 	<div id="read">
 		<header>
-			<h1>Kodama Toshitake</h1>
+			<h1><a href="https://kdmdk.github.io/">Kodama Toshitake</a></h1>
 		</header>
 		<div id="navbar">
 			<ul>
@@ -148,7 +162,7 @@
 
 		<div class="box">
 			<p class="to" id="about">ABOUT</p>
-			<img src="kdmimg.jpg" height="50px" alt="">
+			<img src="myimg/kdmimg.jpg" height="50px" alt="">
 			<p id="name">児玉年健（コダマトシタケ）</p>
 			<p>
 				<br>主な習得スキル
@@ -161,21 +175,22 @@
 
 		<div class="box">
 			<p class="to" id="works">WORKS</p>
-			<p>unityで制作した迷路ゲーム</p>
-			<p>レスポンシブ対応の架空の店舗サイト</p>
-			<p>jQueryの練習用サイト</p>
-			<p>javascriptで制作した倉庫番風ゲーム</p>
-			<p>photoshopで加工した写真</p>
-			<p>illustratorで書いたイラスト</p>
+			<p><a href="https://kdmdk.github.io/Elevation">unityで制作した迷路ゲーム</a></p>
+			<p><a href="https://kdmdk.github.io/owl_site">レスポンシブ対応の架空の店舗サイト</a></p>
+			<!--<p>jQueryの練習用サイト</p>-->
+			<p><a href="kdm_js_souko/kdmtest01.html">javascriptで制作した倉庫番風ゲーム</a></p>
+			<p><a href="myimg/k_work001.jpg">photoshopで加工した写真</a></p>
+			<p><a href="myimg/k_stamp.png">illustratorで書いたイラスト</a></p>
 		</div>
 
 		<div class="box">
 			<p class="to" id="contact">CONTACT</p>
-			<ul>
-				<li><a href="mailto:hzmd8274@gmail.com">hzmd8274@gmail.com</a></li>
-				<li><a href="https://www.facebook.com/profile.php?id=100017737650250">facebook</a></li>
-				<li><a href="https://github.com/kdmdk">Githubページ</a></li>
-			</ul>
+
+			<p><a href="mailto:hzmd8274@gmail.com">メール</a></p>
+			<p><a href="https://www.facebook.com/profile.php?id=100017737650250">facebook</a>
+				<p>
+					<p><a href="https://github.com/kdmdk">Githubページ</a></p>
+
 		</div>
 
 	</div>
@@ -190,13 +205,13 @@
 		$(function() {
 			$('body').vegas({
 				slides: [{
-						src: 'F001.jpg'
+						src: 'myimg/F001.jpg'
 					},
 					{
-						src: 'F002.jpg'
+						src: 'myimg/F002.jpg'
 					},
 					{
-						src: 'F000.jpg'
+						src: 'myimg/F000.jpg'
 					}
 				],
 				delay: 30000,
@@ -205,7 +220,6 @@
 				animation: 'kenburnsLeft'
 			});
 		});
-
 	</script>
 
 </body>
