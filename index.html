@@ -11,14 +11,13 @@
 	<link rel="shortcut icon" type="image/x-icon" href="https://github.com/kdmdk/kdmdk.github.io/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/vegas.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 	<style>
 		* {
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
-			font-family: 'Russo One',"Sawarabi Mincho", sans-serif;
-			
 		}
 
 		body {
@@ -29,57 +28,161 @@
 		}
 
 		header {
-			background-color: rgba(100, 100, 100, 0.4);
-			height: 70px;
+			background-color: rgba(120, 120, 120, 0.9);
+			height: 120px;
+			padding: 10px;
+			font-size: 30px;
+			color: #fff;
+			font-family: 'Audiowide', "Sawarabi Mincho", sans-serif;
+		}
+
+		header h1 {
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+		#navbar {
+			background-color: rgba(100, 100, 100, 0.9);
+			height: 60px;
+			width: 100%;
+			margin: auto;
+			color: #111;
 			font-size: 24px;
-			color:#abc;
-			font-family: 'Russo One', sans-serif;
+			padding: 12px;
+			font-weight: 900;
+			font-family: 'Audiowide', "Sawarabi Mincho", sans-serif;
+		}
+
+		#read {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 120px;
+			width: 100%;
+
+		}
+
+		#main {
+			//margin-bottom: 30px;
+			color: #eee;
+			height: 1800px;
 		}
 
 		footer {
 			background-color: rgba(100, 100, 100, 0.8);
-			text-align: center;
 			color: #FFF;
+			position: fixed;
+			width: 100%;
+			text-align: center;
+			bottom: 0;
+			font-family: 'Audiowide', "Sawarabi Mincho", sans-serif;
 		}
 
-		#box {
-			height: 1000px;
-			background-color: rgba(100, 100, 100, 0.3);
-		}
-		li{
+		#navbar li {
 			display: inline-block;
+		}
+
+		.to {
+			color: #111;
+			font-size: 24px;
+			font-weight: 900;
+			font-family: 'Audiowide', "Sawarabi Mincho", sans-serif;
+			margin-top: -190px;
+			padding-top: 190px;
+		}
+
+		.box {
+			background-color: rgba(100, 100, 100, 0.5);
+			width: 100%;
+			margin: auto;
+			margin-top: 180px;
+			padding: 10px;
+		}
+
+		#name {
+			font-family: "Sawarabi Mincho", sans-serif;
+			font-size: 20px;
+			font-weight: 700;
+			color: #000;
+			//font-style: italic;
+			margin-top: 10px;
+		}
+
+		.box img {
+			margin-top: 10px;
+			margin-left: 20px;
+		}
+
+		#navbar ul li {
+			margin-left: 10px;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:link{
+			color: #111;
+		}
+		a:visited{
+			color: #333;
 		}
 	</style>
 </head>
 
 <body>
-	<header>
-		<h1>Kodama Toshitake</h1>
-	</header>
-	<div id="navbar">
-		<ul>
-			<li>ABOUT</li>
-			<li>WORKS</li>
-			<li>CONTACT</li>
-		</ul>
-	
-	
+	<div id="read">
+		<header>
+			<h1>Kodama Toshitake</h1>
+		</header>
+		<div id="navbar">
+			<ul>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#works">WORKS</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
 	</div>
-	<div id="box">
-		<p>ABOUT</p>
-		<img src="kdmimg.jpg" height="50px" alt="">
-		<p>児玉年健
-			<br>
-			<br>主な習得スキル
-			<br>HTML, CSS, Javascript, jQuery, Unity, Excel, Access, Ruby, RubyOnRails, Photoshop, Illustrator
-			<br>元々ゲームを作る為その周辺の技術を独習し仕事に応用できる技術も習得。
-			<br>事務の仕事を退職後、webデザインの職業訓練とunityのプログラミングブートキャンプを続けて受講。
-			<br>現在求職中……
-		</p>
+	<div id="main">
+
+		<div class="box">
+			<p class="to" id="about">ABOUT</p>
+			<img src="kdmimg.jpg" height="50px" alt="">
+			<p id="name">児玉年健（コダマトシタケ）</p>
+			<p>
+				<br>主な習得スキル
+				<br>HTML, CSS, Javascript, jQuery, Unity, Excel, Access, Ruby, RubyOnRails, Photoshop, Illustrator
+				<br>事務の仕事を退職後、webデザインの職業訓練とunityのプログラミングブートキャンプを続けて受講。
+				<br>
+				<br>現在求職中……
+			</p>
+		</div>
+
+		<div class="box">
+			<p class="to" id="works">WORKS</p>
+			<p>unityで制作した迷路ゲーム</p>
+			<p>レスポンシブ対応の架空の店舗サイト</p>
+			<p>jQueryの練習用サイト</p>
+			<p>javascriptで制作した倉庫番風ゲーム</p>
+			<p>photoshopで加工した写真</p>
+			<p>illustratorで書いたイラスト</p>
+		</div>
+
+		<div class="box">
+			<p class="to" id="contact">CONTACT</p>
+			<ul>
+				<li><a href="mailto:hzmd8274@gmail.com">hzmd8274@gmail.com</a></li>
+				<li><a href="https://www.facebook.com/profile.php?id=100017737650250">facebook</a></li>
+				<li><a href="https://github.com/kdmdk">Githubページ</a></li>
+			</ul>
+		</div>
+
 	</div>
 
+
 	<footer>
-		<p>&copy; 2018 Toshitake Kodama.</p>
+		<p>&copy; 2018 Kodama Toshitake.</p>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/vegas.min.js"></script>
@@ -93,7 +196,7 @@
 						src: 'F002.jpg'
 					},
 					{
-						src: 'F003.jpg'
+						src: 'F000.jpg'
 					}
 				],
 				delay: 30000,
