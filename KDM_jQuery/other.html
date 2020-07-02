@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>おすしと会話</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/master/animate.css">
+    <style>
+        button {
+            font-size: 25px;
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">
+        <p>HOME</p>
+    </a>
+    <h1>おすし</h1>
+    <img src="tabemono/png005.png" alt="">
+    <button class="e1">こんにちは！</button>
+    <button class="e2">食べていいかい？</button>
+    <button class="e3">さかなは苦手だよ</button>
+    <button class="e4">おすし大好き！</button>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="janimate.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.e1').click(function() {
+                $('img').jAnimateOnce('swing'),
+                    $('h1').text('やあ、こんにちは！');
+            });
+
+            $('.e2').click(function() {
+                $('img').jAnimateOnce('shake'),
+                    $('h1').text('やめてね！');
+            });
+
+            $('.e3').click(function() {
+                $('img').jAnimate('fadeOut'),
+                    $('h1').text('……かえるね');
+            });
+
+            $('.e4').click(function() {
+                $('img').jAnimate('fadeIn'),
+                    $('h1').text('ほんとかい？？');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

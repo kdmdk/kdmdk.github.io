@@ -134,12 +134,12 @@
 
 		header a:link,
 		header a:visited,
-		p a:link
-		{
+		p a:link {
 			color: #fff;
 		}
-		p a:visited{
-			color:#bbb;
+
+		p a:visited {
+			color: #bbb;
 		}
 
 	</style>
@@ -148,86 +148,25 @@
 <body>
 	<div id="read">
 		<header>
-			<h1><a href="https://kdmdk.github.io/">Kodama Toshitake</a></h1>
+			<h1><a href="index.html">RETURN</a></h1>
 		</header>
-		<div id="navbar">
-			<ul>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#works">WORKS</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-			</ul>
-		</div>
 	</div>
 	<div id="main">
-
+		
 		<div class="box">
-			<p class="to" id="about">ABOUT</p>
-			<img src="myimg/kdmimg.jpg" height="80px" alt="">
-			<p id="name">児玉年健（コダマトシタケ）</p>
-			<p>
-				<br>主な習得スキル
-				<br>C, HTML, CSS, Javascript, jQuery, Unity, Excel, Access, Ruby, RubyOnRails, Photoshop, Illustrator
-				<br>事務の仕事を退職後、webデザインの職業訓練とunityのプログラミングブートキャンプを続けて受講。
-				<br>その後、C言語プログラミング科の職業訓練を受講。
-			</p>
+			<p class="to" id="about">PHOTO</p>
+		<img src="myimg/piano_out.jpg" height="300px" alt="">
+		<img src="myimg/piano_in.jpg" height="300px" alt="">
 		</div>
-
+		
 		<div class="box">
-			<p class="to" id="works">WORKS</p>
-			<p><a href="piano.html">arduinoを使った電子ピアノ</a></p>
-			<p><a href="https://kdmdk.github.io/OPEN_WAR">unityで制作したカードゲーム</a></p>
-			<p><a href="https://kdmdk.github.io/Elevation">unityで制作した迷路ゲーム</a></p>
-			<p><a href="https://kdmdk.github.io/owl_site">レスポンシブ対応の架空の店舗サイト</a></p>
-			<p><a href="https://kdmdk.github.io/music_review">音楽の感想を紹介したサイト</a></p>
-			
-			
-			<p><a href="KDM_jQuery/index.html">jQueryの練習用サイト</a></p>
-			
-			<p><a href="myimg/k_mint.jpg">オリジナルのミンティアパッケージ</a></p>
-			<p><a href="kdm_js_souko/kdmtest01.html">javascriptで制作した倉庫番風ゲーム</a></p>
-			<p><a href="myimg/k_work001.jpg">photoshopで加工した写真</a></p>
-			<p><a href="myimg/k_stamp.png">illustratorで書いたイラスト</a></p>
+			<p class="to" id="works">DIAGRAM</p>
+		<img src="myimg/haisen.png" height="400px" alt="">
 		</div>
-
-		<div class="box">
-			<p class="to" id="contact">CONTACT</p>
-
-			<p><a href="mailto:hzmd8274@gmail.com">Mail</a></p>
-			<!--<p><a href="https://www.facebook.com/profile.php?id=100017737650250">facebook</a>
-				<p>-->
-					<p><a href="https://github.com/kdmdk">Github</a></p>
-
-		</div>
-
+		
 	</div>
-
-
 	<footer>
 		<p>&copy; 2020 Kodama Toshitake.</p>
 	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/vegas.min.js"></script>
-	<script>
-		$(function() {
-			$('body').vegas({
-				slides: [{
-						src: 'myimg/F001.jpg'
-					},
-					{
-						src: 'myimg/F002.jpg'
-					},
-					{
-						src: 'myimg/F000.jpg'
-					}
-				],
-				delay: 30000,
-				timer: false,
-				overlay: 'overlays/07.png',
-				animation: 'kenburnsLeft'
-			});
-		});
-	</script>
 
 </body>
-
-</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQueryの練習問題</title>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vegas.min.css">
+    <style>
+        /*        h2 {
+            text-align: center;
+            background-color: bisque;
+            box-shadow: 2px 3px 0 yellow;
+            padding: 5px 0 5px 0;
+            color: green;
+            text-shadow: 2px 2px 0 yellowgreen;
+            font-size: 200%;
+        }
+
+        .box {
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            float: left;
+            font-family: "メイリオ";
+        }
+*/
+
+        img {
+            //border-radius: 40px;
+            max-width: 180px;
+            max-height: 150px;
+        }
+
+        h4 {
+            color: red;
+            font-weight: 300;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #wrapper {
+            //margin-top: 500px;
+            //max-width: 960px;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .b_0 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-xs-12" id="wrapper">
+            <a href="index.html">
+                <p>HOME</p>
+            </a>
+            <h4>！！！！！！え？食べていいの？！！！！！</h4>
+
+            <div class="row">
+                <button class="btn btn-danger col-xs-offset-5 col-xs-2 b_0">okwr??</button>
+            </div>
+
+            <div class="box fure col-xs-4">
+                <button class="btn b_1">たべる01</button>
+                <h3>フレンチクルーラー</h3>
+                <p><img src="tabemono/png001.png"></p>
+
+            </div>
+
+            <div class="box old col-xs-4">
+                <button class="btn b_2">たべる02</button>
+                <h3>オールドファッション</h3>
+                <p><img src="tabemono/png002.png" class="img-responsive"></p>
+
+            </div>
+
+            <div class="box pon col-xs-4">
+                <button class="btn b_3">たべる03</button>
+                <h3>ポン・デ・リング</h3>
+                <p><img src="tabemono/png003.png" class="img-responsive"></p>
+
+            </div>
+
+            <div class="box dpop col-xs-4">
+                <button class="btn b_4">たべる04</button>
+                <h3>Dポップ</h3>
+                <p><img src="tabemono/png004.png" class="img-responsive"></p>
+            </div>
+
+            <div class="box pai col-xs-4">
+                <button class="btn b_5">たべる05</button>
+                <h3>パイ類</h3>
+                <p><img src="tabemono/png005.png" class="img-responsive"></p>
+            </div>
+
+            <div class="box sonota col-xs-4">
+                <button class="btn b_6">たべる06</button>
+                <h3>その他</h3>
+                <p><img src="tabemono/png006.png" class="img-responsive"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="vegas.min.js"></script>
+    <script>
+        $(function() {
+            $('body').vegas({
+                slides: [{
+                        src: 'img1.jpg'
+                    },
+                    {
+                        src: 'img2.jpg'
+                    },
+                    {
+                        src: 'img3.jpg'
+                    }
+                ],
+                delay: 7000,
+                timer: false,
+                overlay: 'overlays/07.png',
+                animation: 'kenburnsLeft'
+            });
+        });
+
+        /*ボタンを押すと、画像が変わる*/
+        //ここはフレンチクルーラーのボタンです
+        $(function() {
+            $(".b_1").click(function() {
+                $(".fure").animate({
+                        width: 'toggle'
+                    }, 1000),
+                    $("h4").text("ぱくぱく");
+            });
+        });
+
+        //ここはオールドファッションのボタンです。
+        $(function() {
+            $(".b_2").click(function() {
+                $(".old").animate({
+                        width: 'toggle'
+                    }, 1000),
+                    $("h4").text("おいしいね");
+            });
+        });
+
+        //ここはポンでリングのボタンです。
+        $(function() {
+            $(".b_3").click(function() {
+                $(".pon").animate({
+                        width: 'toggle'
+                    }, 1000),
+                    $("h4").text("もちもちしてた");
+            });
+        });
+        //ここはDポップのぼたんです
+        $(function() {
+            $(".b_4").click(function() {
+                $(".dpop").animate({
+                        width: 'toggle'
+                    }, 1000),
+                    $("h4").text("むしゃむしゃ");
+            });
+        });
+        //ここはパイ類のぼたんです
+        $(function() {
+            $(".b_5").click(function() {
+                $(".pai").animate({
+                        width: 'toggle'
+                    }, 1000),
+                    $("h4").text("ぽろぽろこぼれる");
+            });
+        });
+        //ここはその他のボタンです。
+        $(function() {
+            $(".b_6").click(function() {
+                $(".sonota").animate({
+                        width: 'toggle'
+                    }, 1000),
+                    $("h4").text("おなかすいた");
+            });
+        });
+        $(function() {
+            $(".b_0").click(function() {
+                $(".box").animate({
+                        width: 'toggle'
+                    }, 1000),
+                    $("h4").text("たべたいの？");
+            })
+        })
+    </script>
+
+</body>
+
+</html>

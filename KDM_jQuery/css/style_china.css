@@ -1,0 +1,36 @@
+/********************************
+//  for menu.html
+//  style_china.css
+//******************************/
+
+.main-title {
+    width: 80%;
+    margin: 20px auto 20px auto;
+    border: 2px solid red;
+    background-color: bisque;
+}
+
+.text-a {
+    padding: 10px 25% 10px 10%;
+}
+
+.box-1l, 
+.box-1r,
+.box-2l,
+.box-2r {
+    padding-bottom: 20px;
+}
+
+.box-2l,
+.box-2r {
+    padding-top: 15px;
+    border-top: 1px dotted red;
+}
+
+/**
+.box-11,
+.box-21 {
+    margin: 0 20px 0 0;
+    padding: 10px 0 10px 0;
+    border: 1px solid red;
+} **/

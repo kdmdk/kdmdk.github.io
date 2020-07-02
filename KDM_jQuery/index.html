@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        html{
+            overflow: auto;
+						height:100%;
+        }
+        body{
+            overflow: hidden;
+            min-width: inherit;
+						height:100%;
+        }
+        #hoge {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-color: #333344;
+            box-sizing: border-box;
+
+        }
+
+        #ue {
+            position: absolute;
+        }
+
+        p {
+            color:#222233; //width: 300px;
+            //display: inline-block;
+            font-size: 120px;
+            line-height: 180px;
+            font-weight: bold; //position: relative;
+            //text-align: center;
+            //margin-top: 100px;
+            font-family: serif;
+            top: 0;
+            left: 0;
+            //opacity: 50%;
+        }
+        p {
+            text-shadow: 2px 2px 0 #E60012,
+             -2px 2px 0 #E60012,
+             2px -2px 0 #E60012,
+             -2px -2px 0 #E60012;
+            transform: rotate(-10deg);
+            -moz-transform: rotate(-10deg);
+            -webkit-transform: rotate(-10deg);
+        }
+
+        /*#myicon img {
+            position: absolute;
+            margin: 500px;
+        }*/
+    </style>
+</head>
+
+<body>
+
+    <div class="col-xs-12 container" id="hoge">
+        <div class="col-xs-12" id="ue">
+            <a href="kdm_model/page01.html">
+                <p class="col-xs-offset-3 col-xs-4" id="my">My</p>
+                <p class="col-xs-offset-6 col-xs-4" id="brain">brain</p>
+            </a>
+            <a href="donot.html">
+                <p class="col-xs-offset-2 col-xs-4" id="is">is</p>
+            </a>
+            <a href="other.html">
+                <p class="col-xs-offset-6 col-xs-4" id="confused">confused</p>
+            </a>
+        </div>
+        <!--<a href="#" id="myicon"><img src="hoge.png"></a>
+-->
+    </div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <script src="particles.js"></script>
+    <script src="setting.js"></script>
+
+</body>
+
+</html>

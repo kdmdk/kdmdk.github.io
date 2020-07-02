@@ -1,0 +1,55 @@
+/********************************
+//  for sweets.html
+//  style_sweets.css
+//******************************/
+
+
+.wrapper {
+    width: 960px;
+    margin: auto;
+    background-color: bisque;
+}
+.box-1,
+.box-2,
+.box-3 {
+    width: 960px;
+}
+.title-box {
+    background-image: url(img_cake/title-960.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 180px;
+}
+.title-text {
+    text-align: right;
+    font-weight: bold;
+    color: white;
+}
+.title-subtext {
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.h3 {
+    margin: 30px 0 30px 0;
+}
+.fig-img-text {
+    display: flex;
+}
+.fig-text {
+   /* display: block;*/
+    width: 240px;
+    margin-left: 10px;
+}
+.fig-img160 {
+    display: block;
+    width: 160px;
+}
+.fig-img320 {
+    display: block;
+    width: 320px;
+}
+.photo-4 {
+    width: 940px;
+    display: flex;
+}
