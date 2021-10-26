@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kodama Toshitake</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	
+
 	<link rel="icon" type="image/vnd.microsoft.icon" href="myimg/favicon.ico">
-	
+
 	<link rel="shortcut icon" type="image/x-icon" href="https://github.com/kdmdk/kdmdk.github.io/myimg/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/vegas.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
@@ -36,6 +36,7 @@
 			font-size: 30px;
 			color: #fff;
 			font-family: 'Audiowide', "Sawarabi Mincho", sans-serif;
+			text-align: center;
 		}
 
 		header h1 {
@@ -68,9 +69,9 @@
 		}
 
 		#main {
-			//margin-bottom: 30px;
+			margin-bottom: 30px;
 			color: #eee;
-			height: 1800px;
+			height: 3200px;
 		}
 
 		footer {
@@ -97,6 +98,15 @@
 			padding-left: 12px;
 		}
 
+		#capsule {
+			list-style: none;
+			display: flex;
+			margin: 0 auto;
+			width: 80%;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
 		.box {
 			background-color: rgba(100, 100, 100, 0.5);
 			width: 100%;
@@ -109,13 +119,13 @@
 			font-family: "Sawarabi Mincho", sans-serif;
 			font-size: 20px;
 			font-weight: 700;
-			color: #000; //font-style: italic;
+			color: #000;
+			font-style: italic;
 			margin-top: 10px;
 		}
 
 		.box img {
 			margin-top: 10px;
-			margin-left: 20px;
 		}
 
 		#navbar ul li {
@@ -136,14 +146,35 @@
 
 		header a:link,
 		header a:visited,
-		p a:link
-		{
+		p a:link {
 			color: #fff;
 		}
-		p a:visited{
-			color:#bbb;
+
+		p a:visited {
+			color: #bbb;
 		}
 
+		.art {
+			margin: 10px;
+			max-width: 260px;
+			max-height: 500px;
+		}
+
+		img.wide {
+			width: 256px;
+		}
+
+		.art p {
+			background-color: rgba(0, 0, 0, 1);
+			color: white;
+		}
+
+		.art img {
+			text-align: center;
+		}
+		.title{
+			color:darkgray;
+		}
 	</style>
 </head>
 
@@ -155,6 +186,7 @@
 		<div id="navbar">
 			<ul>
 				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#skills">SKILLS</a></li>
 				<li><a href="#works">WORKS</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
@@ -164,71 +196,94 @@
 
 		<div class="box">
 			<p class="to" id="about">ABOUT</p>
-			<img src="myimg/kdmimg.jpg" height="80px" alt="">
+			<img src="myimg/Face_16_004-2.png" height="80px" alt="">
 			<p id="name">児玉年健（コダマトシタケ）</p>
 			<p>
-				<br>主な習得スキル
-				<br>C, HTML, CSS, Javascript, jQuery, Unity, Excel, Access, Ruby, RubyOnRails, Photoshop, Illustrator
-				<br>事務の仕事を退職後、webデザインの職業訓練とunityのプログラミングブートキャンプを続けて受講。
-				<br>その後、C言語プログラミング科の職業訓練を受講。
+				<br>Excelを主に使う事務員。独学でプログラミングを学習中。
+				<br>webデザインの職業訓練とunityのプログラミングブートキャンプを続けて受講。その後、C言語プログラミング科の職業訓練を受講。
+				<br>ゲーム開発系オンラインサロンに参加中。MDK(マードック)という名義で活動しています。
+				<br>最近は主にunityによるゲーム開発を行なっています。unityroomというサイトにwebGL形式で11作品アップしています。
+				<br>さらにGooglePlayストアに2作品ほどアップしています。
 			</p>
+		</div>
+		<div class="box">
+			<p class="to" id="skills">SKILLS</p>
+			<br>主な習得スキル
+			<br>Unity, Excel, VBA, C, HTML, CSS, Javascript, jQuery, Access, RubyOnRails, Photoshop, Illustrator
 		</div>
 
 		<div class="box">
 			<p class="to" id="works">WORKS</p>
-			<p><a href="piano.html">arduinoを使った電子ピアノ</a></p>
-			<p><a href="https://kdmdk.github.io/OPEN_WAR">unityで制作したカードゲーム</a></p>
-			<p><a href="https://kdmdk.github.io/Elevation">unityで制作した迷路ゲーム</a></p>
-			<p><a href="https://kdmdk.github.io/owl_site">レスポンシブ対応の架空の店舗サイト</a></p>
-			<p><a href="https://kdmdk.github.io/music_review">音楽の感想を紹介したサイト</a></p>
-			
-			
-			<p><a href="KDM_jQuery/index.html">jQueryの練習用サイト</a></p>
-			
-			<p><a href="myimg/k_mint.jpg">オリジナルのミンティアパッケージ</a></p>
-			<p><a href="kdm_js_souko/kdmtest01.html">javascriptで制作した倉庫番風ゲーム</a></p>
-			<p><a href="myimg/k_work001.jpg">photoshopで加工した写真</a></p>
-			<p><a href="myimg/k_stamp.png">illustratorで書いたイラスト</a></p>
-		</div>
+			<div id="capsule">
+				<div class="art"><a href="https://play.google.com/store/apps/details?id=com.murdock_game.ELEVATION"><img src="myimg/elevation.png"><p><b class="title">ELEVATION</b><br>本格的に制作した初のゲーム<br>アプリリリース1作目<br>１マス移動や接近する敵のAIなどを工夫</p></div>
+				<div class="art"><a href="https://play.google.com/store/apps/details?id=com.murdock_game.kagamimochi"><img src="myimg/kagami.gif" class = "wide"><p><b class="title">かがみもちをつくって</b><br>初の共同開発作品<br>アプリリリース2作目<br>キャラクターとプログラム仕上げ、レベルデザイン、リリース作業などを担当</p></div>
+				<div class="art"><a href="https://unityroom.com/games/tentative"><img src="myimg/elevation.png"><p><b class="title">奇妙な夢</b><br>共同開発6作目<br>アドベンチャーゲーム<br>プログラム全般とレベルデザインを担当<br>共同で開発したお二方と話し合いストーリーを共同で制作した部分も</p></div>
+				<div class="art"><a href="https://unityroom.com/games/chased_by_the_sun"><img src="myimg/elevation.png"><p><b class="title">太陽に追われる男</b><br>ランゲーム風2Dアクション<br>追跡する太陽の軌道を工夫</p></div>
+				<div class="art"><a href="https://unityroom.com/games/odoridasu"><img src="myimg/elevation.png"><p><b class="title">大正浪漫遊戯　〜やがて君と踊り出す〜</b><br>共同開発5作目<br>テトリス風パズルゲーム<br>プログラムとレベルデザインを担当<br>サウンド担当の方と音作りの協力も</p></div>
+				<div class="art"><a href="https://unityroom.com/games/1week13th_may_blues"><img src="myimg/elevation.png"><p><b class="title">MAY BLUES</b><br>共同開発4作目<br>ツムツム風パズルゲーム<br>ゲームの案とイラストとレベルデザインを担当<br>初めてプログラム以外を担当</p></div>
+				<div class="art"><a href="https://unityroom.com/games/freeze_and_recycle"><img src="myimg/elevation.png"><p><b class="title">フリーズアンドリサイクル</b><br>共同開発3作目<br>パズル要素のあるアクションゲーム<br>プログラム全般とレベルデザインを担当<br>ギミックのアイディアに苦労</p></div>
+				<div class="art"><a href="https://unityroom.com/games/no_no2"><img src="myimg/elevation.png"><p><b class="title">2位じゃダメです！</b><br>unityroom1weekゲームジャム初提出作品テーマ「２」<br>２日ほどで制作したストップウォッチを止めるゲーム</p></div>
+				<div class="art"><a href="https://unityroom.com/games/doubutsushokubutsushooting"><img src="myimg/elevation.png"><p><b class="title">どうぶつ？しょくぶつ！？シューティング！！！</b><br>共同開発2作目<br>モードを切り替えるシューティングゲーム<br>イラスト、自機移動、ランキングなどを担当</p></div>
+				<div class="art"><a href="https://unityroom.com/games/jump_to_the_sky"><img src="myimg/elevation.png"><p><b class="title">JumpToTheSky</b><br>ひたすらジャンプして制限時間中どこまで登れるか競うプラットフォーマーゲーム<br>一応、サウンド以外全て自作</p></div>
+				<div class="art"><a href="https://unityroom.com/games/open_war"><img src="myimg/elevation.png"><p><b class="title">公開戦争</b><br>トランプを使ったカードゲーム<br>メンターの方のサポートもあって完成したゲーム</p>
+				</div>
 
-		<div class="box">
-			<p class="to" id="contact">CONTACT</p>
+				<!--
+				<p><a href="piano.html">arduinoを使った電子ピアノ</a></p>
+					<p><a href="https://kdmdk.github.io/OPEN_WAR">unityで制作したカードゲーム</a></p>
+					<p><a href="https://kdmdk.github.io/Elevation">unityで制作した迷路ゲーム</a></p>
+					<p><a href="https://kdmdk.github.io/owl_site">レスポンシブ対応の架空の店舗サイト</a></p>
+					<p><a href="https://kdmdk.github.io/music_review">音楽の感想を紹介したサイト</a></p>
 
-			<p><a href="mailto:hzmd8274@gmail.com">Mail</a></p>
-			<!--<p><a href="https://www.facebook.com/profile.php?id=100017737650250">facebook</a>
+
+					<p><a href="KDM_jQuery/index.html">jQueryの練習用サイト</a></p>
+
+					<p><a href="myimg/k_mint.jpg">オリジナルのミンティアパッケージ</a></p>
+					<p><a href="kdm_js_souko/kdmtest01.html">javascriptで制作した倉庫番風ゲーム</a></p>
+					<p><a href="myimg/k_work001.jpg">photoshopで加工した写真</a></p>
+					<p><a href="myimg/k_stamp.png">illustratorで書いたイラスト</a></p>
+					-->
+				</div>
+			</div>
+			<div class="box">
+				<p class="to" id="contact">CONTACT</p>
+
+				<p><a href="mailto:hzmd8274@gmail.com">Mail</a></p>
+				<!--<p><a href="https://www.facebook.com/profile.php?id=100017737650250">facebook</a>
 				<p>-->
-					<p><a href="https://github.com/kdmdk">Github</a></p>
+				<p><a href="https://github.com/kdmdk">Github</a></p>
+
+
+			</div>
+			<!--<br><br><br><br><br><br><br><br><br><br><br>-->
 
 		</div>
 
-	</div>
-
-
-	<footer>
-		<p>&copy; 2020 Kodama Toshitake.</p>
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/vegas.min.js"></script>
-	<script>
-		$(function() {
-			$('body').vegas({
-				slides: [{
-						src: 'myimg/F001.jpg'
-					},
-					{
-						src: 'myimg/F002.jpg'
-					},
-					{
-						src: 'myimg/F000.jpg'
-					}
-				],
-				delay: 30000,
-				timer: false,
-				overlay: 'overlays/07.png',
-				animation: 'kenburnsLeft'
+		<footer>
+			<p>&copy; 2021 Toshitake Kodama.</p>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/vegas.min.js"></script>
+		<script>
+			$(function() {
+				$('body').vegas({
+					slides: [{
+							src: 'myimg/F001.jpg'
+						},
+						{
+							src: 'myimg/F002.jpg'
+						},
+						{
+							src: 'myimg/F000.jpg'
+						}
+					],
+					delay: 30000,
+					timer: false,
+					overlay: 'overlays/07.png',
+					animation: 'kenburnsLeft'
+				});
 			});
-		});
-	</script>
+		</script>
 
 </body>
 
